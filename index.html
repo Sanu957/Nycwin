@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nycwin</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 8px;
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nycwin Game</h1>
+  <button onclick="play()">Play</button>
+  <div id="result"></div>
+
+  <script>
+    function play() {
+      const result = Math.random() < 0.5 ? "YOU WIN!" : "YOU LOSE!";
+      document.getElementById("result").textContent = result;
+    }
+  </script>
+</body>
+</html>
